@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html, course, resume">
+    <meta name="description" content="html course for beginners">
+    <title>Html Course</title>
+    <style>
+        .header {
+            border-bottom: 2px solid gray;
+        }
+
+        .card {
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .color {
+            color: red;
+        }
+
+    </style>
+</head>
+    <body>
+
+        <h1><strong><em>Hello World</em></strong></h1>
+
+        <hr>
+
+        <p>This <em>html</em> course for beginners</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur 
+           adipisicing elit. Doloribus placeat, est 
+           dolores ipsum nam quas incidunt cumque sequi 
+           molestiae sint nostrum suscipit eaque quis a
+           quam, voluptatum veritatis harum 
+           dignissimos.</p>
+        <hr color="black" size="5px" >
+
+        <h1><strong>Maximov Andrey</strong> </h1>
+        <p>I'm a student of a <strong>teh coollege </strong>
+            and work at <strong>KAMAZ</strong></p>
+
+        <p>I like to <em>play footbal and play guitar</em></p>
+
+        <hr size="5px" noshade color="black">
+
+        <h1>Img & Links</h1>
+
+        <a href="https://google.com" >Google</a>
+        <br>
+        <a href="https://google.com" target="_blank" >Google 
+           in new tab</a>
+        <p>
+            <a href="tg/01.html" target="_blank">Server</a>
+        </p>
+
+        <hr>
+
+        <h2>Photo</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/800px-Google_Photos_icon_%282020%29.svg.png" alt="Photo" width="200px">
+
+        <h2>Local Photo</h2>
+
+        <img src="Готовое/Andr.jpg" alt="MyPhoto" width="200">
+
+        <hr size="5px" noshade color="black">
+
+        <h1>List</h1>
+
+        <ul>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+            <li>Element 5</li>
+        </ul>
+
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+            <li>Element 5</li>
+        </ol>
+
+        <!-- ul>li*5  для того чтобы быстро делать списки -->
+        <!-- ul>li{Element}*5 с названием -->
+        <!-- <ul>
+            <li>Element</li>
+            <li>Element</li>
+            <li>Element</li>
+            <li>Element</li>
+            <li>Element</li>
+        </ul> -->
+        <!-- ul>li{Element$}*5 будет считать автоматически  -->
+        <!-- <ul>
+            <li>Element1</li>
+            <li>Element2</li>
+            <li>Element3</li>
+            <li>Element4</li>
+            <li>Element5</li>
+        </ul> -->
+
+        <hr size="5px" noshade color="black">
+
+        <h1>Table</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Work</th>
+                    <th>School</th>
+                    <th>Years</th>
+                </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td>None</td>
+                    <td>Tehcol</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>None</td>
+                    <td>23</td>
+                </tr>
+                </tbody>
+
+            <!-- <tfoot>
+                
+            </tfoot> -->
+            <!-- <tr>
+                <td>Work</td>
+                <td>School</td>
+                <td>Years</td>
+            </tr>
+            <tr>
+                <td>None</td>
+                <td>Tehcol</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>None</td>
+                <td>23</td>
+            </tr> -->
+        </table>
+        <hr size="5px" noshade color="black">
+
+        <h1>Forms</h1>
+
+        <form action="/"> <!-- кто будет обрабатывать форму -->
+            
+            <div>
+            <label for="in">Input</label>
+            <input type="text" id="in" value="Text" readonly>
+            </div>
+            <!-- readonly - чтобы можно было только читать, изменять нельзя -->
+            <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Put email">
+            </div>
+
+            <div>
+                <label for="pas">Password</label>
+                <input type="password" id="pas">
+            </div>
+
+            <div>
+                <label for="num">Number</label>
+                <input type="number" id="num" min="0">
+            </div>
+
+            <div>
+                <label for="ran">Range</label>
+                <input type="range" id="ran" min="0" max="10" step="5">
+            </div>
+            <!-- step - количество в одном переносе -->
+            <div>
+                <label for="dat">Date</label>
+                <input type="date" id="dat">
+            </div>
+
+            <div>
+                <label for="col">Color</label>
+                <input type="color" id="col">
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" cols="20" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="sex">Gender</label>
+                <select name="" id="sex">
+                    <option value="male" selected>Man</option>
+                    <option value="female">Woman</option>
+                    <option value="other">Any more</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Work</label>
+                <input type="radio" name="work"> 1
+                <input type="radio" name="work"> 2 
+                <input type="radio" name="work"> 5
+                <input type="radio" name="work"> 10+
+            </div>
+
+            <div>
+                <label>Work</label>
+                <input type="checkbox" name="food"> Apple
+                <input type="checkbox" name="food"> Lemon 
+                <input type="checkbox" name="food"> Bread
+                <input type="checkbox" name="food"> Meat
+            </div>
+            
+            <!-- <input type="submit" value="Enter"> -->
+
+            <button type="submit">Enter</button>
+        
+        </form>
+
+        <hr size="5px" noshade color="black">
+
+        <h1>Blocks</h1>
+
+        <p style="border: 2px solid red ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="border: 2px solid blue"> Quod cum quas nobis et numquam, vitae perferendis expedita aliquam nam fugiat.</span></p>
+
+        <p style="border: 2px solid red ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Quas, perspiciatis.</strong> </p>
+
+        <a href="#" style="border: 2px solid grey ;">This is link</a>
+        <a href="#" style="border: 2px solid grey ;">This is link2</a>
+        <div>
+            <a href="#" style="border: 2px solid grey ;">This is link2</a>
+        </div>
+
+        <hr size="5px" noshade color="black">
+
+        <h1>Site</h1>
+
+            <header id="header" class="header">
+                <h2>Site</h2>
+            </header>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </nav>
+            <!-- nav - семантический блок для навигации по сайту -->
+            <hr>
+
+            <!-- <aside></aside> - служит для боковых менюшек-->
+
+            <section>
+                <article id="block1" class="card header">
+                    <h3>Block 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="color"> Laboriosam nam quod animi iusto ut dolores sint optio </span> accusantium doloremque doloribus?</p>
+                </article>
+
+                <article id="block2" class="card">
+                    <h3>Block 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nam quod animi iusto ut dolores sint optio accusantium doloremque doloribus?</p>
+                </article>
+
+                <footer id="footer">
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Telegram</li>
+                        <li>TouTube</li>
+                    </ul>
+                </footer>
+            </section>
+
+<!-- <section></section> - для группировки -->
+<!-- <article></article> - если div повторяющиеся  -->
+<!-- Классы (class) используются для стилистики  
+id - для того чтобы всё выделить (блок) -->
+<!-- Div - блочный элемент 
+ Span - для линейного использования (строчка чтобы не переносилась)-->
+
+ <!-- div. - быстрый эммет
+    <div class=""></div>-->
+
+<!-- div#
+    <div id=""></div> -->
+
+ <!-- div#app - id с названием
+    <div id="app"></div> -->
+<!--   . - быстрая активация div  
+    <div class=""></div> -->
+
+
+    </body>
+
+    <div style="margin-bottom: 500px;"></div>
+</html>
